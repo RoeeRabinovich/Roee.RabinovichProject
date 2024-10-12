@@ -1,18 +1,21 @@
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background-image: url(../images/aluminum-foil-6961638_1920.jpg);
-  background-repeat: round;
+  /* background-image: url(../images/aluminum-foil-6961638_1920.jpg);
+  background-repeat: round; */
 }
 /* NAVBAR */
-
+.mainnav {
+  background-color: #fcfcfce1;
+  backdrop-filter: blur(5px);
+}
 .mynav a {
-  color: rgba(231, 231, 231, 0.459) !important;
+  color: rgba(36, 35, 35, 0.774) !important;
   font-weight: 500;
   transition: 0.3;
 }
 .mynav a:hover {
-  color: rgb(172, 172, 172) !important;
+  color: rgb(8, 8, 8) !important;
   transition: 0.3;
 }
 
@@ -35,26 +38,35 @@ body {
 
 /* INTRODUCTION */
 .intro {
-  background: linear-gradient(
-    105deg,
-    rgb(0, 0, 0),
-    rgba(0, 0, 0, 0.979),
-    rgba(0, 0, 0, 0.89)
-  );
   height: 80vh;
 }
+.introimg {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  position: absolute;
+  opacity: 0.7;
+  z-index: 0;
+}
+
 .intro h1 {
   font-size: 70px !important;
+  z-index: 1;
+}
+.intro p {
+  z-index: 1;
 }
 .myimg {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  filter: grayscale(50%);
+  filter: grayscale(100%);
   margin: 1.5rem;
   transition: all 0.5s ease;
   object-fit: cover;
   object-position: left;
+  box-shadow: #a1a1a1 2px 5px 10px 0;
+  z-index: 1;
 }
 .myimg:hover {
   transform: scale(1.2);
@@ -66,7 +78,7 @@ body {
 #htmlclr {
   font-style: italic;
   font-weight: 800;
-  background: -webkit-linear-gradient(105deg, #e28228, #f51818d7);
+  background: -webkit-linear-gradient(105deg, #e28228, #f51818);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: -webkit-text-fill-color 0.3s ease;
@@ -75,7 +87,7 @@ body {
 #cssclr {
   font-style: italic;
   font-weight: 800;
-  background: -webkit-linear-gradient(105deg, #1f89ec, #0940f370);
+  background: -webkit-linear-gradient(105deg, #0284fd, #09f3f3);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: -webkit-text-fill-color 0.3s ease;
@@ -83,7 +95,7 @@ body {
 #bsclr {
   font-style: italic;
   font-weight: 800;
-  background: -webkit-linear-gradient(105deg, #730afd, #b043f070);
+  background: -webkit-linear-gradient(105deg, #750cfd, #bd4cff);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: -webkit-text-fill-color 0.3s ease;
@@ -91,7 +103,7 @@ body {
 #sassclr {
   font-style: italic;
   font-weight: 800;
-  background: -webkit-linear-gradient(105deg, #de1ef0, #ef73f5a1);
+  background: -webkit-linear-gradient(105deg, #ef3eff, #ef73f5);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: -webkit-text-fill-color 0.3s ease;
@@ -197,14 +209,14 @@ body {
   align-items: center;
   height: 100%;
   width: 100%;
-  background: #fff;
+
   overflow: hidden;
 }
 
 .project-cont {
   display: grid;
   margin-top: 2.5rem;
-  width: 60%;
+  width: 70%;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 200px);
   align-items: center;
@@ -259,6 +271,13 @@ body {
   );
   padding: 5rem 3.5rem;
 }
+.footerbg {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
 .footer-form {
   display: flex;
   justify-content: center;
@@ -271,6 +290,7 @@ body {
   color: #fff;
   width: 100%;
   font-size: 20px;
+  z-index: 1;
 }
 
 .form-input input {
@@ -317,14 +337,14 @@ body {
   font-weight: normal;
 }
 /*mobile responsive section */
-@media (max-width: 780px) {
+@media (max-width: 768px) {
   /* home media section */
 
   .intro h1 {
     font-size: 40px !important;
   }
   .intro p {
-    font-size: 20px !important;
+    font-size: 17px !important;
     padding: 2rem 0;
   }
   .myimg {
