@@ -11,6 +11,7 @@ body {
 .mainnav {
   background-color: #fcfcfce1;
   backdrop-filter: blur(5px);
+  box-shadow: 0 0 25px 3px;
 }
 .mynav a {
   color: rgba(36, 35, 35, 0.774) !important;
