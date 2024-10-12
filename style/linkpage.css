@@ -1,0 +1,134 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* NAVBAR */
+.mainnav {
+  background-color: #fcfcfce1;
+  backdrop-filter: blur(5px);
+}
+.mynav a {
+  color: rgba(36, 35, 35, 0.774) !important;
+  font-weight: 500;
+  transition: 0.3;
+}
+.mynav a:hover {
+  color: rgb(8, 8, 8) !important;
+  transition: 0.3;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 50%;
+}
+.btn {
+  transition: 0.3s;
+  border: 1px solid rgba(134, 133, 133, 0.459) !important;
+}
+.btn:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+/* main area */
+.maincont {
+  position: relative;
+  background: radial-gradient(#fff, #a1a1a1ab);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 7rem 0;
+  z-index: 2;
+}
+
+.bgimg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  background-position: center center;
+  background-size: cover;
+  z-index: 0;
+}
+.maincont h1 {
+  font-size: 70px;
+  font-weight: 700;
+}
+.maincont p,
+h1 {
+  z-index: 1;
+  backdrop-filter: blur(1px);
+}
+.mainbtns {
+  position: relative;
+}
+.mainbtns a {
+  margin: 1rem;
+}
+/* icons section */
+.icon-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  padding: 30px 0;
+  position: relative;
+  background: rgb(255, 255, 255);
+  box-shadow: 5px 0 10px 5px #a1a1a1ab;
+}
+.icon-cont img {
+  height: 2.5rem;
+  margin: 0 60px;
+}
+/* project image */
+.prjct-cont {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin: auto;
+  padding: 50px 0;
+}
+.prjct-cont img {
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: 2px 0 10px 5px #a1a1a1ab;
+  background-size: cover;
+}
+/* copyrights */
+.cprline {
+  color: #fff;
+  background: #000;
+  height: 2rem;
+  padding: 5px;
+}
+.cprline h3 {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+@media (max-width: 768px) {
+  .maincont {
+    height: 80vh;
+  }
+  .icon-cont img {
+    margin: auto;
+  }
+  .prjct-cont {
+    align-items: center;
+    padding: 0 2px;
+  }
+  .prjct-cont img {
+    margin: 50px;
+    height: 100%;
+    width: 100%;
+  }
+}
