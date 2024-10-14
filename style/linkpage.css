@@ -120,6 +120,12 @@ h1 {
   .maincont {
     height: 80vh;
   }
+  .maincont h1 {
+    font-size: 50px;
+  }
+  .maincont p {
+    font-size: 20px !important;
+  }
   .icon-cont img {
     margin: auto;
   }

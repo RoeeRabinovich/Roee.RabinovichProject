@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+  font-family: "heebo", sans-serif;
+}
+
+.cont {
+  height: 100vh;
+}
+.bgimg {
+  position: absolute;
+  object-fit: cover;
+  height: 64.5%;
+  width: 100%;
+  z-index: 0;
+}
+.form-cont {
+  color: #fff;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 35.5rem;
+  height: 40.2rem;
+  background: #1a1a1ad4;
+  margin: 8rem 16rem;
+  z-index: 1;
+  gap: 2.5rem;
+  padding: 2rem;
+}
+.form-cont h1 {
+  position: relative;
+  text-align: end;
+  top: -1.5rem;
+  left: 0.5rem;
+  font-size: 36px;
+  font-weight: 900;
+}
+.form-cont p {
+  position: relative;
+  width: 417px;
+  top: -3rem;
+  font-size: 20px;
+  color: #f9f9f9;
+}
+
+.form-inputs {
+  text-align: right;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  top: -3rem;
+}
+.form-inputs input {
+  border: 1px solid #d31c75;
+  width: 418px;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+.form-btn {
+  align-self: flex-start;
+  color: #fff;
+  font-weight: bold;
+  font-size: 22px;
+  background: #d31c75 0% 0% no-repeat padding-box;
+  width: 10rem !important;
+  margin: 1rem 0;
+  height: 3rem;
+}
+@media (max-width: 768px) {
+  .bgimg {
+    background-size: cover;
+    width: 100%;
+    height: 13.3rem;
+    background-position: center right;
+  }
+
+  .form-cont {
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0;
+    width: 82%;
+    height: 29rem;
+    left: 10%;
+  }
+  .form-cont h1 {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 7rem;
+    width: 10rem;
+  }
+  .form-cont p {
+    width: 14.3rem;
+    text-align: center;
+    font-size: 15px;
+  }
+  .form-btn {
+    width: 4.7rem !important;
+    height: 2rem !important;
+    font-size: 15px;
+    display: flex;
+  }
+  .form-inputs input {
+    width: 14.3rem;
+    height: 1.7rem;
+  }
+}
