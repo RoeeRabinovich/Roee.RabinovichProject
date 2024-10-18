@@ -1,0 +1,134 @@
+// color palette
+$bg-blue: #e5eeff;
+$txt-cyan: #0ee1da;
+$deep-blue: #020253;
+$deep-purple: #8e097c;
+// size palette
+$p-size: normal normal normal 20px/26px Assistant;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  direction: rtl;
+}
+body {
+  background: $bg-blue;
+}
+
+.main-cont {
+  padding: 5rem;
+}
+.grid-cont {
+  display: grid;
+  grid-template-columns: repeat(4, 296px);
+  grid-template-rows: repeat(6, 270px);
+  gap: 20px;
+  justify-content: center;
+}
+.grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.grid > p {
+  color: #f9f9f9;
+  font: $p-size;
+  margin: 1rem 0;
+}
+.grid:nth-child(1) {
+  grid-area: 1 / 1 / 3 / 3;
+  background: $deep-blue;
+  text-align: center;
+  padding: 4rem;
+}
+.grid h1:nth-child(1) {
+  color: $txt-cyan;
+  font: normal normal bold 61px/80px Assistant;
+}
+
+// form section
+.grid:nth-child(13) {
+  grid-area: 4 / 3 / 7 / 5;
+  background: $deep-purple;
+  padding: 4rem 2.5rem;
+  justify-content: space-evenly;
+
+  .form-box {
+    color: $txt-cyan;
+    font: normal normal bold 16px/24px Heebo;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 90%;
+    gap: 2rem;
+
+    .input-box input {
+      width: 100%;
+      padding: 1rem 10rem;
+      background: #e5eeff;
+      border: none;
+      border-bottom: 5px $txt-cyan solid;
+    }
+
+    #textarea input {
+      padding: 5rem 10rem;
+      width: 100%;
+    }
+  }
+
+  .form-text {
+    text-align: center;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+    padding: 0 2rem;
+  }
+  .form-text h2 {
+    font: normal normal bold 35px/46px Assistant;
+    color: #fff;
+  }
+  .form-text p {
+    font: $p-size;
+    color: #f9f9f9;
+  }
+}
+
+.form-btn {
+  margin-top: 1rem;
+  color: $deep-blue;
+  background: $txt-cyan;
+  border: none;
+  font: normal normal bold 24px/33px Heebo;
+  width: 90%;
+  padding: 1rem 10rem;
+}
+
+@media (max-width: 768px) {
+  .main-cont {
+    padding: 0;
+    width: 100%;
+  }
+  .grid-cont {
+    grid-template-columns: repeat(2, 160px);
+    grid-template-rows: repeat(12, 146px);
+    gap: 12px;
+    padding: 0;
+  }
+  .grid:nth-child(1) {
+    padding: 0;
+    margin-top: -6rem;
+    margin-inline: -2rem;
+  }
+  .grid:nth-child(13) {
+    grid-area: 7 / 1 / 10 / 3;
+    overflow: hidden;
+  }
+
+  .grid {
+    align-items: normal;
+  }
+}

@@ -197,7 +197,6 @@ body {
     rgba(0, 0, 0, 0.979),
     rgba(0, 0, 0, 0.89)
   );
-  display: flex;
   padding: 15px;
 }
 
@@ -336,6 +335,7 @@ body {
 }
 #submit-btn {
   width: 10rem;
+  text-align: center;
 }
 #formtext {
   height: 9rem;
@@ -389,6 +389,7 @@ body {
   .about {
     height: 90vh;
     flex-direction: column;
+    align-items: center;
   }
 
   .aboutimg {
@@ -397,15 +398,18 @@ body {
     margin: 0 1rem;
   }
   .about-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 2rem auto;
     text-align: center;
   }
   .about-text h2 {
     text-align: center !important;
-    font-size: 30px !important;
+    font-size: 35px !important;
   }
   .about-text p {
-    font-size: 17px !important;
+    font-size: 20px !important;
     text-align: center !important;
     margin: 1rem auto;
     padding: 0 !important;
