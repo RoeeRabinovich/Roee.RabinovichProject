@@ -30,10 +30,10 @@ body {
 
 .btns {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
-  margin: auto;
-  width: 50%;
+  margin-inline: 10rem;
+  width: 100%;
 }
 .btn {
   transition: 0.3s;
@@ -205,7 +205,9 @@ body {
   width: 20%;
   border-radius: 100%;
   margin: auto;
+  box-shadow: #1a1919ab 2px 5px 10px 0;
 }
+
 .about-text {
   position: relative;
   width: 70%;
@@ -409,7 +411,7 @@ body {
     font-size: 35px !important;
   }
   .about-text p {
-    font-size: 20px !important;
+    font-size: 17px !important;
     text-align: center !important;
     margin: 1rem auto;
     padding: 0 !important;
