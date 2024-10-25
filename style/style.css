@@ -431,7 +431,7 @@ body {
   }
   .project-cont {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 150px);
+    grid-template-rows: repeat(5, 200px);
     margin: auto;
 
     padding-bottom: 2.5rem;

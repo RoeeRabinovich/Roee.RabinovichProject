@@ -22,7 +22,7 @@
   height: 100%;
   width: 100%;
   z-index: 0;
-  max-height: 65vh;
+  max-height: 70vh;
 }
 .text-box {
   position: relative;
@@ -59,12 +59,20 @@ h1 {
   background: #ffe849;
   border: 1px solid #ffe849;
   border-radius: 25px;
+  transition: 0.3s;
+}
+#form-btn:hover {
+  background: #fcce54;
+  border: 1px solid #fcce54;
+  transition: 0.3s;
 }
 
 /* box area */
 .box-area {
   display: flex;
-  margin-top: 5rem;
+  justify-content: end;
+  align-items: center;
+  margin-top: 2rem;
   padding: 20px 0 30px;
   position: relative;
 }
@@ -73,7 +81,7 @@ h1 {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(3, 25%);
-  grid-template-rows: auto;
+  grid-template-rows: repeat(1, 300px);
   justify-content: center;
   align-items: center;
 }
