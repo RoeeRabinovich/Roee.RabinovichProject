@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "Zangezi";
+  src: url(ZangeziSans07_TRIAL-Regular.otf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* hero section */
+.hero {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero img {
+  position: absolute;
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  max-height: 65vh;
+}
+.text-box {
+  position: relative;
+  text-align: center;
+  width: 20rem;
+  margin-top: 45px;
+}
+h1 {
+  font: normal normal 38px/38px Zangezi;
+}
+.text-box p {
+  font: normal normal 20px/26px inter;
+  margin-top: 0.5rem;
+}
+.form-cont {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.input-box input {
+  height: 2rem;
+  width: 20rem;
+  border: #f4f2ed;
+  padding-left: 5px;
+}
+#form-btn {
+  width: 20rem;
+  height: 2.5rem;
+  font: normal normal 20px/26.5px inter;
+  background: #ffe849;
+  border: 1px solid #ffe849;
+  border-radius: 25px;
+}
+
+/* box area */
+.box-area {
+  display: flex;
+  margin-top: 5rem;
+  padding: 20px 0 30px;
+  position: relative;
+}
+.box-cont {
+  position: relative;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 25%);
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  max-height: 225px;
+  min-height: 225px;
+  padding: 0 17px;
+}
+.box h3 {
+  font: normal normal 20px/30px Zangezi;
+}
+.box p {
+  font: normal normal 17px/25.5px inter;
+}
+
+.box-img img {
+  object-fit: cover;
+  width: 120px;
+  height: 120px;
+}
+
+/* media section */
+
+@media (max-width: 780px) {
+  .box-cont {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
