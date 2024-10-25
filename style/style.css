@@ -330,6 +330,7 @@ body {
   flex-direction: column;
   height: 3rem;
   width: 25rem;
+  text-align: center;
 }
 .footer-form a {
   color: #fff;
