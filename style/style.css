@@ -1,6 +1,6 @@
 @font-face {
   font-family: "sf pro display";
-  src: url(/style/fonts/SFPRODISPLAYREGULAR.OTF);
+  src: url(./style/fonts/SFPRODISPLAYREGULAR.OTF);
 }
 * {
   padding: 0;
@@ -12,7 +12,7 @@ body {
 }
 h1,
 h2 {
-  font-family: "sf pro display";
+  font-family: "sf pro display", sans-serif;
 }
 /* NAVBAR */
 .mainnav {
@@ -265,7 +265,6 @@ h2 {
 .project-cont img {
   width: 100%;
   height: 100%;
-
   object-fit: cover;
   border-radius: 5px;
   box-shadow: #a1a1a1 2px 5px 10px 0;
