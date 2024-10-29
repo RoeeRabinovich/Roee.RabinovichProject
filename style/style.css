@@ -532,7 +532,7 @@ h2 {
   }
 }
 /* tablet responsive section */
-@media (max-width: 1200px) and (min-width: 769px) {
+@media (max-width: 1300px) and (min-width: 769px) {
   .nav-link {
     font-size: 20px !important;
   }
@@ -555,10 +555,12 @@ h2 {
   }
 
   .intro p {
-    padding-top: 2rem !important;
+    padding-top: 0 !important;
+    font-size: 20px !important;
   }
   .about-text p {
     padding-top: 0 !important;
+    font-size: 20px !important;
   }
   .project-cont {
     width: 90%;
