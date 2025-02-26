@@ -1,9 +1,12 @@
+/* Global Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+
+/* Body Layout */
 body {
   height: 100vh;
   background: rgba(117, 87, 252, 0.685);
@@ -11,6 +14,8 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+/* Onload Hero Section */
 #onloadhero {
   position: absolute;
   display: flex;
@@ -24,6 +29,7 @@ body {
   gap: 2rem;
 }
 
+/* Select Bar and Begin Button */
 .selectbar,
 #beginbtn {
   text-align: center;
@@ -42,31 +48,38 @@ body {
   color: #fff;
   transition: 0.4s;
 }
+
 #beginbtn:hover {
   background: rgba(141, 115, 255, 0.685);
   transition: 0.4s;
 }
+
+/* Main Container */
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 100%;
-  width: 80%;
-
+  width: 100%;
+  margin-left: 20%;
   z-index: 0;
 }
+
+/* Info Area */
 .infoarea {
   width: 40vw;
   position: relative;
   margin-bottom: -30px;
 }
+
 .textinfobox {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* Score Counter */
 #scorecount {
   width: 80px;
   height: 80px;
@@ -85,16 +98,20 @@ body {
   right: 0;
 }
 
+/* Headings */
 h1 {
   font-size: 70px;
   color: #fff;
   text-shadow: 1px 2px 10px #ffffff60;
 }
+
 h2 {
   font-size: 40px;
   color: #fff;
   text-shadow: 1px 2px 10px #ffffff60;
 }
+
+/* Text Container */
 .textCont {
   background: rgba(118, 87, 255, 0.363);
   border-radius: 20px;
@@ -110,6 +127,7 @@ h2 {
   box-shadow: 1px 2px 10px #8f47e254;
 }
 
+/* Input Box */
 .inputBox {
   display: flex;
   justify-content: center;
@@ -117,6 +135,7 @@ h2 {
   flex-direction: column;
   gap: 2rem;
 }
+
 #answerInput,
 #checkanswer,
 #skipquestion {
@@ -125,6 +144,7 @@ h2 {
   border: none;
   border-radius: 20px;
 }
+
 #checkanswer {
   font-size: 17px;
   font-weight: 600;
@@ -132,6 +152,7 @@ h2 {
   background: rgba(126, 97, 255, 0.685);
   transition: 0.4s;
 }
+
 #skipquestion {
   font-size: 17px;
   font-weight: 600;
@@ -139,21 +160,28 @@ h2 {
   background: rgba(206, 196, 255, 0.397);
   transition: 0.4s;
 }
+
+/* Questions and Info Box */
 #questions {
   font-size: 60px;
   color: #fff;
 }
+
 #infobox {
   color: #fff;
   font-size: 20px;
 }
+
+/* Side Tab */
 .sidetab {
   width: 20%;
+  margin-right: 10%;
 }
+
+/* Answers Box */
 .answersBox {
   padding: 1rem;
   gap: 1rem;
-
   display: flex;
   align-items: center;
   justify-content: start;
@@ -166,9 +194,12 @@ h2 {
   text-align: center;
   box-shadow: 1px 2px 10px rgba(143, 71, 226, 0.3);
 }
+
 .answersBox hr {
   width: 80%;
 }
+
+/* Buttons Area */
 .buttonsarea {
   display: flex;
   flex-direction: row;
@@ -179,6 +210,7 @@ h2 {
   width: 80%;
   gap: 1rem;
 }
+
 .buttons {
   width: 25%;
   height: 40px;
@@ -188,18 +220,13 @@ h2 {
   box-shadow: 1px 2px 10px #8f47e254;
   transition: 0.4s;
 }
+
 .change {
   display: none;
 }
 
-/* hover section */
-
-#checkanswer:hover {
-  background: rgba(177, 163, 241, 0.397);
-  transition: 0.4s;
-  transform: scale(1.1);
-}
-
+/* Hover Effects */
+#checkanswer:hover,
 .buttons:hover {
   background: rgba(177, 163, 241, 0.397);
   transition: 0.4s;
@@ -210,4 +237,59 @@ h2 {
   background: rgba(126, 97, 255, 0.685);
   transition: 0.4s;
   transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container,
+  .textCont,
+  .infoarea {
+    width: 90vw;
+    margin-left: 0;
+  }
+  .sidetab {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .answersBox {
+    width: 50vw;
+  }
+
+  #answerInput,
+  #checkanswer,
+  #skipquestion {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2,
+  #questions {
+    font-size: 25px;
+  }
+
+  .buttons {
+    width: 50%;
+  }
+
+  #scorecount {
+    width: 50px;
+    height: 50px;
+    font-size: 14px;
+    top: 10%;
+    right: 5%;
+  }
 }
