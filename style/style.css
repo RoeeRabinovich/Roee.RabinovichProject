@@ -87,7 +87,7 @@ h2 {
   filter: grayscale(0%);
 }
 
-/* Languages design */
+/* my technologies design */
 #htmlclr {
   font-style: italic;
   font-weight: 800;
@@ -117,6 +117,14 @@ h2 {
   font-style: italic;
   font-weight: 800;
   background: -webkit-linear-gradient(105deg, #ef3eff, #ef73f5);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: -webkit-text-fill-color 0.3s ease;
+}
+#jsclr {
+  font-style: italic;
+  font-weight: 800;
+  background: -webkit-linear-gradient(105deg, #ffdd47, #eec719);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: -webkit-text-fill-color 0.3s ease;
@@ -296,6 +304,18 @@ h2 {
 }
 .project-cont a:nth-child(7) {
   grid-area: 2 / 3 / 4 / 3;
+}
+/* javascript projects section */
+.js-container {
+  background: radial-gradient(#fff, #e4e4e4e1);
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
 /* contact section */

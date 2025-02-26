@@ -86,7 +86,7 @@ const update = () => {
   }
   //Keeps track of the highest score.
   if (gameOver) {
-    const highScore = parseInt(localStorage.getItem("highScore"));
+    const highScore = parseInt(localStorage.getItem("highScore")) || 0;
     if (scoreCount > highScore) {
       localStorage.setItem("highScore", scoreCount.toString());
     }

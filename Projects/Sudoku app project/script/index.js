@@ -118,7 +118,7 @@ const selectNumber = (e) => {
 const enableRemoveMode = () => {
   removeMode = true;
 };
-//made for removing a selected number,i made so in the mobile version it will be possible to use it instead of right clicking.
+//made for removing a selected number, made so in the mobile version it will be possible to use it instead of right clicking.
 const removeNumber = (e) => {
   const tile = e.target;
   if (tile.classList.contains("tilestart")) return;
@@ -162,7 +162,7 @@ if (newGameBtn) {
   });
 }
 
-//Made this just to check if the checkMistakes function works...
+//Made it this just to check if the checkMistakes function works.
 /*
 const fillSolution = () => {
   const solution = JSON.parse(localStorage.getItem("sudokuSolution"));
