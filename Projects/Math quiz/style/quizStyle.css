@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  height: 100vh;
+  background: rgba(117, 87, 252, 0.685);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#onloadhero {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgb(117, 87, 252);
+  z-index: 1;
+  gap: 2rem;
+}
+
+.selectbar,
+#beginbtn {
+  text-align: center;
+  width: 130px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px #ffffff60;
+  margin: 0.5rem;
+}
+
+#beginbtn {
+  font-size: 16px;
+  font-weight: bold;
+  background: rgba(126, 97, 255, 0.685);
+  color: #fff;
+  transition: 0.4s;
+}
+#beginbtn:hover {
+  background: rgba(141, 115, 255, 0.685);
+  transition: 0.4s;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 80%;
+
+  z-index: 0;
+}
+.infoarea {
+  width: 40vw;
+  position: relative;
+  margin-bottom: -30px;
+}
+.textinfobox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#scorecount {
+  width: 80px;
+  height: 80px;
+  background: rgba(118, 87, 255, 0.363);
+  color: #fff;
+  text-shadow: 1px 2px 10px #ffffff60;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 1px 2px 10px rgba(143, 71, 226, 0.3);
+  position: absolute;
+  top: 20%;
+  right: 0;
+}
+
+h1 {
+  font-size: 70px;
+  color: #fff;
+  text-shadow: 1px 2px 10px #ffffff60;
+}
+h2 {
+  font-size: 40px;
+  color: #fff;
+  text-shadow: 1px 2px 10px #ffffff60;
+}
+.textCont {
+  background: rgba(118, 87, 255, 0.363);
+  border-radius: 20px;
+  width: 40vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 2.5rem 0;
+  margin: 2.5rem 0;
+  box-shadow: 1px 2px 10px #8f47e254;
+}
+
+.inputBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+#answerInput,
+#checkanswer,
+#skipquestion {
+  width: 15vw;
+  height: 2.5rem;
+  border: none;
+  border-radius: 20px;
+}
+#checkanswer {
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(126, 97, 255, 0.685);
+  transition: 0.4s;
+}
+#skipquestion {
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(206, 196, 255, 0.397);
+  transition: 0.4s;
+}
+#questions {
+  font-size: 60px;
+  color: #fff;
+}
+#infobox {
+  color: #fff;
+  font-size: 20px;
+}
+.sidetab {
+  width: 20%;
+}
+.answersBox {
+  padding: 1rem;
+  gap: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  color: #fff;
+  font-size: 20px;
+  width: 20vw;
+  border-radius: 20px;
+  background: rgba(126, 97, 255, 0.685);
+  text-align: center;
+  box-shadow: 1px 2px 10px rgba(143, 71, 226, 0.3);
+}
+.answersBox hr {
+  width: 80%;
+}
+.buttonsarea {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  margin: auto;
+  margin: 1rem;
+  width: 80%;
+  gap: 1rem;
+}
+.buttons {
+  width: 25%;
+  height: 40px;
+  background: rgba(118, 87, 255, 0.363);
+  border-radius: 20px;
+  border: none;
+  box-shadow: 1px 2px 10px #8f47e254;
+  transition: 0.4s;
+}
+.change {
+  display: none;
+}
+
+/* hover section */
+
+#checkanswer:hover {
+  background: rgba(177, 163, 241, 0.397);
+  transition: 0.4s;
+  transform: scale(1.1);
+}
+
+.buttons:hover {
+  background: rgba(177, 163, 241, 0.397);
+  transition: 0.4s;
+  transform: scale(1.1);
+}
+
+#skipquestion:hover {
+  background: rgba(126, 97, 255, 0.685);
+  transition: 0.4s;
+  transform: scale(1.1);
+}

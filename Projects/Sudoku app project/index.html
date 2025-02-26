@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sudoku</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="./script/index.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sudoku</h1>
+      <p id="rightclickinfo">Right click to remove a number.</p>
+      <p id="infobox"></p>
+      <div id="errors"></div>
+      <div class="boardgrid"></div>
+      <br />
+      <div class="bottomarea">
+        <div id="digitsbox"></div>
+        <button id="newGameBtn" type="button">New Game.</button>
+        <button id="removeNumberBtn"><i class="fa-solid fa-x"></i></button>
+      </div>
+    </div>
+  </body>
+</html>

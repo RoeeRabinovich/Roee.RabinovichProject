@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <title>Snake</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <script type="module" src="./script/functionality.js" defer></script>
+    <script type="module" src="./script/snake.js" defer></script>
+  </head>
+  <body>
+    <h1>Roee's Snake</h1>
+    <p>Press the arrow keys to move.</p>
+    <div class="score-container">
+      <div class="score-box">
+        <p>Your Score:</p>
+        <div id="scorecount"></div>
+      </div>
+      <div class="score-box">
+        <p>Highest Score:</p>
+        <div id="highestscore"></div>
+      </div>
+    </div>
+
+    <canvas id="board"></canvas>
+
+    <div class="bottom-container">
+      <button id="restartbtn">
+        <i class="fa-solid fa-rotate-right"></i>
+      </button>
+    </div>
+    <div class="arrow-container">
+      <div class="arrow-row">
+        <button id="upArrow" class="arrow-btn">▲</button>
+      </div>
+      <div class="arrow-row">
+        <button id="leftArrow" class="arrow-btn">◄</button>
+        <button id="downArrow" class="arrow-btn">▼</button>
+        <button id="rightArrow" class="arrow-btn">►</button>
+      </div>
+    </div>
+  </body>
+</html>

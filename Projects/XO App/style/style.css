@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  font-family: "Arial", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#infobox {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Board Styles */
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border: 3px solid #333;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.33%;
+  height: 33.33%;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+.square:hover {
+  background-color: #f0f0f0;
+}
+
+/* Circle Design */
+.circle {
+  position: relative;
+  height: 70%;
+  width: 70%;
+  border-radius: 50%;
+  border: 10px solid #4285f4;
+}
+
+/* Cross Design */
+.cross {
+  position: relative;
+  height: 70%;
+  width: 70%;
+}
+
+.cross::before,
+.cross::after {
+  content: "";
+  position: absolute;
+  background-color: #db4437;
+  top: 50%;
+  left: 50%;
+  width: 12%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+}
+
+.cross::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.cross::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* Button Styling */
+button {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #3367d6;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Responsive Styles for Mobile and Small Screens */
+@media (max-width: 600px) {
+  .board {
+    width: 90vw;
+    height: 90vw;
+  }
+
+  .square {
+    width: 33.33%;
+    height: 33.33%;
+  }
+
+  .circle,
+  .cross {
+    height: 50%;
+    width: 50%;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .board {
+    width: 90vw;
+    height: 90vw;
+  }
+
+  .square {
+    width: 33.33%;
+    height: 33.33%;
+  }
+
+  .circle,
+  .cross {
+    height: 40%;
+    width: 40%;
+  }
+
+  button {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}

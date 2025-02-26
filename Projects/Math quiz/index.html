@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./script/script.js" defer></script>
+
+    <link rel="stylesheet" href="./style/quizStyle.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- beginning screen -->
+    <div id="onloadhero">
+      <h1>Roee's Math quiz!</h1>
+      <h2>Choose difficulty and operator.</h2>
+
+      <div class="startbox">
+        <select name="difficulty" id="difficulty" class="selectbar">
+          <option value="easy">easy</option>
+          <option value="medium">medium</option>
+          <option value="hard">hard</option>
+        </select>
+        <select name="operators" id="operators" class="selectbar">
+          <option value="random">Every operator.</option>
+          <option value="+">addition</option>
+          <option value="-">reduction</option>
+          <option value="*">multipication</option>
+          <option value="/">division</option>
+        </select>
+        <button id="beginbtn" onclick="beginfnc()">Begin!</button>
+      </div>
+    </div>
+    <!-- main area -->
+    <div class="container">
+      <div class="infoarea">
+        <div class="textinfobox">
+          <h1>Math Quiz</h1>
+          <p id="infobox"></p>
+        </div>
+        <!-- Score count -->
+        <div id="scorecount"></div>
+      </div>
+      <div class="textCont">
+        <h2 id="questions"></h2>
+        <div class="inputBox">
+          <input type="number" id="answerInput" />
+          <button id="checkanswer" type="submit">Check Answer</button>
+          <button id="skipquestion">Skip</button>
+        </div>
+      </div>
+    </div>
+    <!-- Answers & buttons area -->
+    <div class="sidetab">
+      <div class="buttonsarea">
+        <button class="buttons" id="restartbtn">
+          <i class="fas fa-undo" style="color: #ffffff"></i>
+        </button>
+
+        <button class="buttons" id="changediff">
+          <i class="fa-solid fa-turn-up" style="color: #ffffff"></i>
+        </button>
+        <select name="difficulty" id="difficulty" class="selectbar change">
+          <option value="easy">easy</option>
+          <option value="medium">medium</option>
+          <option value="hard">hard</option>
+        </select>
+      </div>
+      <div class="answersBox">
+        <h2>Answers:</h2>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- boxicons link -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+
+    <!-- Script -->
+    <script src="./scripts/main.js" defer type="module"></script>
+    <title>Users Managment & registration</title>
+  </head>
+  <body>
+    <!-- main container -->
+    <div class="container">
+      <!-- login form -->
+      <div class="form-container login">
+        <form action="" class="login-form">
+          <h1>Login</h1>
+          <div class="input-box">
+            <input type="text" placeholder="Username" required />
+            <i class="bx bxs-user"></i>
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="Password" required />
+            <i class="bx bxs-lock-alt"></i>
+          </div>
+          <div class="forgot-link">
+            <a href="#">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn">Login</button>
+          <!-- social media icons -->
+          <p>or login with social platforms</p>
+          <div class="social-icons">
+            <a href="#"><i class="bx bxl-google"></i></a>
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-github"></i></a>
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
+          </div>
+        </form>
+      </div>
+
+      <!-- register form -->
+      <div class="form-container register">
+        <form action="" class="register-form">
+          <h1>Registeration</h1>
+          <div class="input-box">
+            <input type="text" placeholder="Username" required />
+            <i class="bx bxs-user"></i>
+          </div>
+          <div class="input-box">
+            <input type="email" placeholder="Email" required />
+            <i class="bx bxs-envelope"></i>
+          </div>
+          <div class="input-box">
+            <input
+              type="password"
+              placeholder="Password"
+              id="password-input"
+              required
+            />
+            <i class="bx bxs-lock-alt"></i>
+            <div class="password-advisor">
+              <ul class="passwordval-list">
+                <li id="pass-length">8 characters length.</li>
+                <li id="pass-upper">At least 1 letter in Upper Case.</li>
+                <li id="pass-special">At least 1 Special Character.</li>
+                <li id="pass-number">At least 1 number.</li>
+              </ul>
+            </div>
+          </div>
+
+          <button type="submit" class="btn">Register</button>
+          <p>or register with social platforms</p>
+          <!-- social media icons -->
+          <div class="social-icons">
+            <a href="#"><i class="bx bxl-google"></i></a>
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+            <a href="#"><i class="bx bxl-github"></i></a>
+            <a href="#"><i class="bx bxl-linkedin"></i></a>
+          </div>
+        </form>
+      </div>
+      <!-- toggle panel left side -->
+      <div class="toggle-box">
+        <div class="toggle-panel toggle-left">
+          <h1>Hello,Welcome!</h1>
+          <p>Don't have and acount?</p>
+          <button class="btn register-btn">Register</button>
+        </div>
+
+        <!-- toggle panel right side -->
+        <div class="toggle-panel toggle-right">
+          <h1>Welcome Back!</h1>
+          <p>Already have an acount?</p>
+          <button class="btn login-btn">Login</button>
+        </div>
+      </div>
+    </div>
+    <!-- forgot password pop up -->
+    <div class="forgot-popup">
+      <div id="x-icon">
+        <i class="bx bxs-x-circle"></i>
+      </div>
+      <h2 id="popup-header">Forgot Password</h2>
+      <p id="popup-info">Enter your email address and username.</p>
+      <form action="" id="confirm-form" class="confirm-user">
+        <div class="input-box">
+          <input type="text" placeholder="Username" required />
+          <i class="bx bxs-user"></i>
+        </div>
+        <div class="input-box">
+          <input type="email" placeholder="Email" required />
+          <i class="bx bxs-envelope"></i>
+        </div>
+        <div class="input-box">
+          <button type="submit" class="btn">Confirm User</button>
+        </div>
+      </form>
+      <form action="" id="forgot-form" class="change-password">
+        <div class="input-box">
+          <input
+            type="password"
+            placeholder="New Password"
+            id="passwordrst-input"
+            required
+          />
+          <i class="bx bxs-lock-alt"></i>
+          <div class="passwordrst-advisor">
+            <ul class="passwordval-list">
+              <li id="pass-lengthpu">8 characters length.</li>
+              <li id="pass-upperpu">At least 1 letter in Upper Case.</li>
+              <li id="pass-specialpu">At least 1 Special Character.</li>
+              <li id="pass-numberpu">At least 1 number.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="input-box">
+          <input type="password" placeholder="Confirm new Password" required />
+          <i class="bx bxs-lock-alt"></i>
+        </div>
+        <p id="error-info"></p>
+        <div class="input-box">
+          <button type="submit" class="btn">Reset Password</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
