@@ -22,6 +22,9 @@ const registerUserImplament = (e) => {
     alert("Password does not meet the requirments.");
     e.target.reset();
     return;
+  } else if (username.length < 7) {
+    alert("Username need to be at least 8 characters long.");
+    e.target.reset();
   } else {
     alert(`Welcome ${username}!`);
   }
@@ -44,6 +47,9 @@ const loginCheck = (e) => {
     const currentUser = users.find((user) => user.username === username);
     User.login(currentUser.id);
     alert(`Hello ${username}, Welcome Back!`);
+
+    window.location.href =
+      "https://roeerabinovich.github.io/Roee.RabinovichProject/";
   } else if (!users.find((user) => user.username === username)) {
     alert("Username does not exist!");
     return;

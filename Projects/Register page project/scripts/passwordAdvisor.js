@@ -19,6 +19,12 @@ const paintAdvisorLines = () => {
   } else if (passwordInput.value.length > 8) {
     document.getElementById("pass-length").style.color = "green";
   }
+  //Password lower case letter
+  if (!passwordInput.value.match(/[a-z]/)) {
+    document.getElementById("pass-lower").style.color = "red";
+  } else {
+    document.getElementById("pass-lower").style.color = "green";
+  }
 
   //Password upper case letter
   if (!passwordInput.value.match(/[A-Z]/)) {
@@ -65,7 +71,12 @@ const paintAdvisorLinesPopup = () => {
   } else if (passwordInputPopup.value.length > 8) {
     document.getElementById("pass-lengthpu").style.color = "green";
   }
-
+  //Password lower case letter
+  if (!passwordInput.value.match(/[a-z]/)) {
+    document.getElementById("pass-lowerpu").style.color = "red";
+  } else {
+    document.getElementById("pass-lowerpu").style.color = "green";
+  }
   //Password upper case letter
   if (!passwordInputPopup.value.match(/[A-Z]/)) {
     document.getElementById("pass-upperpu").style.color = "red";
